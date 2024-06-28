@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+}
+
+#top {
+    width: 100%;
+    height: 60vh; /* Set height using vh */
+    background-image: url(portrait.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+#text {
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 20vh; /* Set position using vh */
+    padding: 0 10vw; /* Set padding using vw */
+    color: #fff;
+    display: flex;
+}
+
+#textright {
+    display: flex;
+    width: 60vw; /* Set width using vw */
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textright p {
+    font-size: 12px;
+    width: 30%;
+}
+
+#text h1 {
+    font-weight: 500;
+    font-size: 4vw;
+}
+
+#bottom {
+    width: 100%;
+    height: 40vh; /* Set height using vh */
+    background-color: green;
+    display: flex;
+}
+
+#bone {
+    padding: 50px 70px;
+    width: 25vw; /* Set width using vw */
+    height: 100%;
+    background-color: #fff;
+}
+
+#bone-text #bone-p1 {
+    color: #727272;
+}
+
+#bone-text #bone-p2 {
+    color: #292929;
+    margin-top: 20px;
+    width: 100px;
+}
+
+#btwo {
+    width: 25vw; /* Set width using vw */
+    height: 100%;
+    background-image: url(btwo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#bthree {
+    width: 20vw; /* Set width using vw */
+    height: 100%;
+    background-color: purple;
+}
+
+#bthreetop {
+    width: 100%;
+    min-height: 20vh;
+    padding: 35px 40px;
+    color: #ffffffd0;
+    background-color: #FF3800;
+}
+
+#bthreebottom {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(flower.jpg);
+    background-size: cover;
+}
+
+#bthreetop h4 {
+    margin-bottom: 15px;
+}
+
+#bthreetop .bthree-para {
+    padding: 1px;
+    font-size: 15px;
+}
+
+#bfour {
+    width: 30vw; /* Set width using vw */
+    height: 100%;
+    background-color: #1F1F1F;
+    color: #e8f1f1d5;
+    padding: 30px;
+}
+
+.notf {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+.notf #photo1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(photo1.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.notf #photo2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(photo2.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.notf p {
+    width: 80%;
+    font-size: 16px;
+}
+
+
+@media(max-width: 500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #overlay #text #textright{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #overlay #text #textright #icons{
+        margin-top: 30px;
+    }
+
+    #text h1{
+        font-size: 10vw;
+    }
+    #bottom{
+        flex-direction: column;
+    }
+    #bone{
+        width: 100%;
+    }
+    #btwo{
+        min-height: 40vh;
+        width: 100%;
+    }
+    #bthree{
+        flex-direction: column;
+        width: 100%;
+    }
+    #bthreebottom{
+        min-height: 30vh;
+    }
+    #bfour{
+        width: 100%;
+    }
+    #bottom{
+        min-height: 20vh;
+    }
+
+}
